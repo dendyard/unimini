@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name='ad.size' content='width=320,height=480'>
+
+    <!-- JS Load -->
+    <script type="text/javascript">
+        var clickTag = "http://www.google.com";
+    </script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="js/hammer.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    
+</head>
+
+<body>
+
+    <div id="ad-container">
+        <div id='hitig'></div>
+        <div id='hitbanner'></div>
+        <div id='hswipe'></div>
+        <div id='profile'>
+            <img src="images/profile.jpg" id='proicon'>
+            
+        </div>
+        <div id="pname">The Coffee House</div>
+        <img src="images/next.png" id='btnnext'>
+        <img src="images/prev.png" id='btnprev'>
+
+        <div class="frame_img">
+
+            <div class="scene">
+                <div class="cube">
+                    <div class="cube__face cube__face--front">
+                        <img src="images/p1.jpg" id='gal1' class="img-fit">
+                    </div>
+                    <div class="cube__face cube__face--right">
+                        <img src="images/p2.jpg" id='gal2' class="img-fit">
+                    </div>
+                    <div class="cube__face cube__face--top">
+                        <img src="images/p3.jpg" id='gal3' class="img-fit">
+                    </div>
+                    <div class="cube__face cube__face--left">
+                        <img src="images/p4.jpg" id='gal4' class="img-fit">
+                    </div>
+                    <div class="cube__face cube__face--back">
+                        <img src="images/p5.jpg" id='gal5' class="img-fit">
+                    </div>
+                    <div class="cube__face cube__face--bottom">
+                        <img src="images/p6.jpg" id='gal6' class="img-fit">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id='viewmore'>More Info</div>
+
+
+        <div id='copyarea'>
+            Nongkrong tambah kopi berkualitas tinggi ke The coffee house aja   
+        </div>
+
+    </div>
+    <div id='border'></div>
+</body>
+<script>
+    hitig.addEventListener('click', exitUrlIG);
+    hitbanner.addEventListener('click', exitUrl);
+
+    function exitUrlIG() {
+        window.open('', '_BLANK');
+    }
+
+    function exitUrl() {
+        window.open('', '_BLANK');
+    }
+
+</script>
+
+<script>
+    var cube = document.querySelector('.cube');
+    var currentface = '';
+    var currentClass = '';
+    var autoplaycount = 0;
+    var counface = 0;
+    var locked = false;
+    var dird = ['front', 'right', 'top', 'left', 'back', 'bottom'];
+    var FastTimerVar;
+
+    // Library for Mobile Gesture
+    var hammer = new Hammer(document.getElementById('hswipe'));
+    hammer.on("swipeleft swiperight", function(e) {
+
+        if (!locked) {
+            console.log(counface);
+            clearInterval(FastTimerVar);
+            locked = true;
+            if (e.type == "swipeleft") {
+                cube.classList.add('show-' + dird[counface]);
+                changeSide(1);
+                //Enabler.counter('Swipe_Previous');
+            } else if (e.type == "swiperight") {
+                changeSide(2);
+                cube.classList.add('show-' + dird[counface]);
+                //Enabler.counter('Swipe_Next');
+            }
+        }
+
+    });
+
+    btnprev.addEventListener('click', arrbtnchange);
+    btnnext.addEventListener('click', arrbtnchange);
+
+    function arrbtnchange(e) {
+        if (!locked) {
+            clearInterval(FastTimerVar);
+            locked = true;
+            if (e.target.id == "btnprev") {
+                cube.classList.add('show-' + dird[counface]);
+                changeSide(1);
+                //Enabler.counter('Swipe_Previous');
+            } else{
+                changeSide(2);
+                cube.classList.add('show-' + dird[counface]);
+                //Enabler.counter('Swipe_Next');
+            }
+        }
+    }
+
+    
+
+
+    // If true, start function. If false, listen for INIT.
+    window.onload = function() {
+        //if (Enabler.isInitialized()) {
+            initads();
+
+        // } else {
+        //     Enabler.addEventListener(studio.events.StudioEvent.INIT, initads);
+        // }
+    }
+
+    function initads() {
+        FastTimerVar = setInterval(autoPlay, 2000);
+
+    }
+
+    function autoPlay() {
+        if (!locked) {
+            locked = true;
+            changeSide(2);
+            cube.classList.add('show-' + dird[counface]);
+            autoplaycount++
+            if (autoplaycount >= 12) {
+                clearInterval(FastTimerVar);
+            }
+            //
+        }
+    }
+    //ctahotspot.addEventListener('click', exit);
+
+    function exit() {
+        //Enabler.exit('Background Click')
+    }
+
+
+
+    function nextFaceOnTap() {
+        clearInterval(FastTimerVar);
+        locked = true;
+        console.log(counface);
+        changeSide(2);
+        //Enabler.counter('Tap_Next');
+        cube.classList.add('show-' + dird[counface]);
+    }
+
+    function movetxt() {
+        TweenLite.to(txt1, 0, {
+            x: -5,
+            alpha: 0,
+            ease: Expo.easeOut
+        });
+        TweenLite.to(txt2, 0, {
+            x: -5,
+            alpha: 0,
+            ease: Expo.easeOut
+        });
+        TweenLite.to(txt3, 0, {
+            x: -5,
+            alpha: 0,
+            ease: Expo.easeOut
+        });
+        TweenLite.to(txt4, 0, {
+            x: -5,
+            alpha: 0,
+            ease: Expo.easeOut
+        });
+        TweenLite.to(txt5, 0, {
+            x: -5,
+            alpha: 0,
+            ease: Expo.easeOut
+        });
+        TweenLite.to(txt6, 0, {
+            x: -5,
+            alpha: 0,
+            ease: Expo.easeOut
+        });
+
+        switch (counface) {
+            case 0:
+                TweenLite.to(txt1, 0.5, {
+                    x: 0,
+                    opacity: 1,
+                    ease: Sine.easeOut,
+                    delay: 0.1
+                });
+                break;
+            case 1:
+                TweenLite.to(txt2, 0.5, {
+                    x: 0,
+                    opacity: 1,
+                    ease: Sine.easeOut,
+                    delay: 0.1
+                });
+                break;
+            case 2:
+                TweenLite.to(txt3, 0.5, {
+                    x: 0,
+                    opacity: 1,
+                    ease: Sine.easeOut,
+                    delay: 0.1
+                });
+                break;
+            case 3:
+                TweenLite.to(txt4, 0.5, {
+                    x: 0,
+                    opacity: 1,
+                    ease: Sine.easeOut,
+                    delay: 0.1
+                });
+                break;
+            case 4:
+                TweenLite.to(txt5, 0.5, {
+                    x: 0,
+                    opacity: 1,
+                    ease: Sine.easeOut,
+                    delay: 0.1
+                });
+                break;
+            case 5:
+                TweenLite.to(txt6, 0.5, {
+                    x: 0,
+                    alpha: 1,
+                    ease: Sine.easeOut,
+                    delay: 0.1
+                });
+                break;
+
+        }
+    }
+
+    function changeSide(e) {
+
+        if (locked) {
+            if (e == 1) {
+                counface -= 1;
+                if (counface <= -1) {
+                    counface = 5;
+                }
+            } else {
+                counface += 1;
+                if (counface >= 6) {
+                    counface = 0;
+                }
+            }
+            var showClass = 'show-' + dird[counface];
+            if (currentClass) {
+                cube.classList.remove(currentClass);
+            }
+
+
+            cube.classList.add(showClass);
+            currentClass = showClass;
+            locked = false;
+
+
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,163 @@
+body {
+    margin: auto;
+}
+
+#container {
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: solid 1px #dbdbdb;
+}
+
+#bgblur {
+    width: 400px;
+    height: 600px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+.filterblur20 {
+    filter: blur(20px);
+}
+
+#blurbg {
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    left: 0px;
+    top: 0px;
+    background-color: #d5ebe4;
+     /* background: rgb(36,251,207); */
+/* background: linear-gradient(137deg, rgba(36,251,207,1) 0%, rgba(86,145,249,1) 22%, rgba(241,153,245,1) 78%, rgba(249,232,173,1) 100%); */ */
+}
+
+.imga {
+   
+    position: absolute;
+}
+
+.imgb {
+    top: 0px;
+    position: absolute;
+}
+
+
+.tiles-container {
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 100px;
+    left: -53px;
+}
+
+.tiles {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    /* transform: rotate(-45deg); */
+    overflow: hidden;
+    border-radius: 10px;
+    /* filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.25)); */
+}
+
+.tiles img {
+    width: 100%;
+}
+
+.tl1 {
+    left: 0px;
+    top: 0px;
+}
+
+.tl2 {
+    top: 160px;
+}
+
+.tl3 {
+    left: 160px;
+    top: 77px;
+}
+
+.tl4 {
+    left: 160px;
+    top: 238px;
+}
+
+.tl5 {
+    left: -160px;
+    top: 77px;
+}
+
+#tittle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #434241;
+    position: absolute;
+    bottom: 106px;
+    width: 100%;
+    font-weight: bold;
+}
+
+#sub {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #434241;
+    position: absolute;
+    top: 375px;
+    width: 261px;
+    left: 0;
+    height: 44px;
+    overflow: hidden;
+    right: 0;
+    margin: auto;
+}
+
+#cta {
+    font-family: 'Roboto', sans-serif;
+    background-color: #beafce;
+    text-align: center;
+    padding: 10px 0px;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    color: #fff;
+    bottom: 10px;
+    right: 10px;
+}
+
+#pro {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 42px;
+    border-radius: 50%;
+
+}
+
+#foll {
+    position: absolute;
+    bottom: 34px;
+    left: 60px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #434241;
+}
+
+#igpro {
+    position: absolute;
+    bottom: 22px;
+    left: 59px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #434241;
+}

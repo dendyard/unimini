@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>2 Column Ads | UNIMIND Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    
+    <style>
+
+        html,body{
+            margin:0;
+        }
+
+        #container{
+            position: absolute;
+            width: 320px;
+            height: 480px;
+            background-color: #fcc271;
+            overflow: hidden;
+        }
+
+        #img1 {
+            width: 320px;
+            position: absolute;
+            top: 0;
+            margin: auto;
+        }
+        
+        #logo {
+            width: 100px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            margin: auto;
+        }
+
+        #colright {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 320px;
+            height: 200px;
+        }
+
+        .overflownone {
+            overflow: hidden;
+        }
+
+        #headline {
+            font-family: roboto;
+            font-weight: bold;
+            font-size: 29px;
+            color: #434241;
+            top: 210px;
+            position: absolute;
+            left: 20px;
+            width: 280px;
+            line-height: 1.3;
+            border-bottom: solid 1px;
+            padding-bottom: 10px;
+        }
+
+        #subline {
+            position: absolute;
+            font-family: roboto;
+            top: 313px;
+            left: 20px;
+            width: 280px;
+        }
+
+        #cta {
+            font-family: roboto;
+            font-size: 18px;
+            background-color: #8957bf;
+            padding: 10px 20px;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            max-width: 260px;
+            overflow: hidden;
+        }
+
+        #shineefct {
+            position: absolute;
+            left: -77px;
+            top: -34px;
+            width: 90px;
+        }
+
+        p {
+            margin-block-end: 0em;
+            margin-block-start: 5px;
+        }
+
+        #hit {
+            position: absolute;
+            width: 320px;
+            height: 480px;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id='container'>
+        
+        <div id="colright" class="overflownone">
+            <img src="rightimg.jpg" id="img1">
+        </div>
+        <div id="colleft">
+            <img src="logo.jpg" id="logo">
+            <div id="headline">
+                <p>The Coffee<br>House</p>
+            </div>
+            
+            <div id="subline">
+                Nongkrong tambah kopi berkualitas tinggi ke The coffee house aja
+                <p style="font-size: 12px;opacity: 0.8;padding-top: 10px;">
+                    Start from : 10K IDR<br>
+                    every monday &amp; tuesday
+                </p>
+            </div>
+
+            <div id="cta">
+                <div id="shine">
+                    <img src="sine.png" id="shineefct">
+                </div>
+                <span id="ctatext">
+                    Learn More
+                </span>
+            </div>
+        </div>
+        <div id='hit'></div>
+    </div>
+</body>
+<script>
+
+let urllink = 'https://www.mysantika.com/our-destinations/jawa-timur';
+let animateloop = 2;
+
+init();
+function init(){
+    TweenLite.to(logo, 0, {scale:.5, opacity:0, ease:Expo.SineInOut});
+    TweenLite.to(headline, 0, {y:-10, opacity:0, ease:Expo.SineInOut});
+    TweenLite.to(subline, 0, {y:-10, opacity:0, ease:Expo.SineInOut});
+    TweenLite.to(cta, 0, {y:-10, opacity:0, ease:Expo.SineInOut});
+    TweenLite.to(shineefct, 0, {x:0, ease:Expo.SineOut});
+    TweenLite.to(img1, 0, {scale:1.5, ease:Expo.SineOut, onComplete : frame2});
+}
+
+
+hit.addEventListener('click', gotoURL);
+    
+function frame2() {
+    TweenLite.to(logo, 0.5, {scale:1, opacity:1, ease:Expo.SineOut});
+    TweenLite.to(headline, .5, {y:0, opacity:1, ease:Expo.SineOut, delay:.3});
+    TweenLite.to(subline, .5, {y:0, opacity:1, ease:Expo.SineOut, delay:.5});
+    TweenLite.to(cta, .5, {y:0, opacity:1, ease:Expo.SineOut, delay:.9, onComplete: ()=>{
+        TweenLite.to(shineefct, 3, {x:250, ease:Expo.SineOut});
+        TweenLite.to(shineefct, 0, {x:0, ease:Expo.SineOut, delay:3.1});
+        TweenLite.to(shineefct, 3, {x:250, ease:Expo.SineOut, delay:3.5, onComplete: ()=>{
+            if (animateloop >= 1) {
+                init();
+                animateloop--;
+            }
+            
+        }});
+    }});
+    TweenLite.to(img1, 4, {scale:1, ease:Expo.SineOut});
+}
+
+function gotoURL(){
+   
+    
+}
+
+
+</script>
+</html>

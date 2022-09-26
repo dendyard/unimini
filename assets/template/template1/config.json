@@ -1,0 +1,10 @@
+{
+	"templatename": "2 Column Ads",
+	"dimension": ["320x480"],
+	"logo": ["logo.png", "Logo", "image"],
+	"headline": ["<p>Staycation at Banten</p>", "Headline", "text"],
+	"subline": ["<p style=width:130px;font-size:10px;color: #e2e1e0;font-family: Arial, Helvetica, sans-serif;>Start from</p><p style=width: 280px; font-size: 23px; font-weight: bold; color: #e2e1e0; font-family: Arial, Helvetica, sans-serif;>IDR 350.000<small style=font-size:10px;font-weight:100;color: #e2e1e0;font-family: Arial, Helvetica, sans-serif;> nett/night</small></p><p style=width:280px;font-size:12px;color: #e2e1e0;font-family: Arial, Helvetica, sans-serif;opacity: 0.6;>Free Breakfast<br>Free WiFi</p>", "Subline", "text"],
+	"ctatext": ["Book Now", "CTA", "button"],
+	"img1": ["rightimg.jpg", "Top Image", "image"]
+}
+

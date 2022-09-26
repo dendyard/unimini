@@ -1,0 +1,2108 @@
+:root {
+    --dark: #282828;
+    --gold: #0845A4;
+}
+
+*:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Trajan-Pro';
+    src: url('../fonts/Trajan-Pro.ttf');
+}
+
+@font-face {
+    font-family: 'Trajan-Pro-Regural';
+    src: url('../fonts/TrajanPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Trajan Pro Bold';
+    src: url('../fonts/TrajanPro-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Visby CF';
+    src: url('../fonts/VisbyCF-MediumOblique.eot');
+}
+
+@font-face {
+    font-family: 'Visby CF Extrabold';
+    src: url('../fonts/VisbyCF-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Visby CF bold';
+    src: url('../fonts/VisbyCF-Bold.ttf');
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+body {
+    margin: auto;
+    font-family: 'Visby CF bold';
+    overflow-x: hidden;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-inline {
+    position: fixed;
+    width: 100%;
+    background-color: var(--dark);
+    height: 80px;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1002;
+    transition: all 1s ease;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
+}
+
+.trojan-span {
+    font-family: 'Trajan-Pro';
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    padding-top: 10px;
+}
+
+.logo-img {
+    width: 230px;
+}
+
+.nav {
+    font-family: 'Visby CF bold';
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.nav li {
+    display: inline-block;
+    color: #fff;
+    padding: 0 32px 0 32px;
+    cursor: pointer;
+    height: 42px;
+}
+
+.nav li.active {
+    display: inline-block;
+    color: #fff;
+    padding: 0 32px 0 32px;
+    cursor: pointer;
+    color: var(--gold) !important;
+}
+
+.nav li:hover {
+    color: var(--gold) !important;
+}
+
+.unselectedmall {
+    position: absolute;
+    width: 100%;
+    /* height: 300px; */
+    background-color: #fff;
+    margin-top: 485px;
+    border-radius: 31px 32px 0px 0px;
+}
+
+.op0 {
+    opacity: 0;
+}
+
+.darkbg {
+    background-color: var(--dark) !important;
+}
+
+.whitebg {
+    background-color: #fff !important;
+}
+
+.font-white {
+    color: #fff !important;
+}
+
+.menu-logo {
+    position: absolute;
+    top: 8px;
+    width: 235px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+}
+
+.smalllinks {
+    font-size: 16px;
+    font-family: 'Visby CF';
+    text-decoration: underline;
+}
+
+.menu-links {
+    position: absolute;
+    margin-left: 219px;
+    width: 732px;
+}
+
+.header-menus {
+    position: absolute;
+    width: 1200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    margin-top: 12px;
+    height: 10px;
+}
+
+.search-bar {
+    width: 200px;
+    height: 37px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 13px;
+    padding-top: 8px;
+    color: #7A7A7A;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.menu-right {
+    position: absolute;
+    /*    left: 950px;*/
+    right: 0px;
+    top: 8px;
+}
+
+.log-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 220px;
+    top: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#userProPic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#srcico {
+    position: absolute;
+    right: 12px;
+}
+
+.container {
+    background-color: var(--dark);
+    margin-top: 0;
+}
+
+.container-white {
+    background-color: #fff;
+}
+
+.discoverexp {
+    /* height: 500px; */
+    width: 100%;
+    font-family: 'Visby CF bold';
+    font-size: 36px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    margin-top: 200px;
+    bottom: 0;
+    position: absolute;
+}
+
+.detailcont {
+    width: 100%;
+    font-family: 'Visby CF bold';
+    font-size: 36px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.h2discovery {
+    width: 628px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bltsm {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin: 5px;
+    opacity: 0.5
+}
+
+.bltsm.active {
+    width: 20px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.bullet_ts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pickmall {
+    width: 271px;
+    background-color: var(--gold);
+    border-radius: 12px;
+    height: 56px;
+    padding: 8px 48px;
+    font-family: 'Visby CF bold';
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 65px;
+    cursor: pointer;
+}
+
+.pickmall span {
+    display: inline-block;
+    padding-right: 6px;
+    padding-top: 9px;
+}
+
+.white-container {
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #fff;
+    height: 570px;
+}
+
+.filterval {
+    background-color: #fab300;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 2px;
+    pointer-events: none;
+}
+
+#tittfilter {
+    text-align: left;
+    color: var(--dark);
+    font-size: 30px;
+    padding-left: 60px;
+    margin: 20px;
+}
+.white-container2 {
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #fff;
+    height: 570px;
+    overflow-y: scroll;
+}
+
+.postfixed {
+    position: fixed;
+}
+
+#logomain {
+    position: absolute;
+}
+
+#logomain img {
+    width: 150px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+#headline {
+    position: absolute;
+    left: 20px;
+    top: 88px;
+    background-color: #0845a4;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-family: 'Visby CF Extrabold';
+}
+#subline {
+    position: absolute;
+    left: 20px;
+    top: 134px;
+    background-color: #0845a4;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-family: 'Visby CF';
+}
+
+.white-container-relatif {
+    width: 1450px;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.white-container-relatif-brands {
+    width: 1200px;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.white-container-events {
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #fff;
+    height: 850px;
+}
+
+.postshare {
+    text-align: center;
+    font-family: 'Visby CF';
+    color: #9B9B9B;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.dark-container {
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    background-color: var(--dark);
+    background-image: url(../images/butterfly.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position-y: 72px;
+    height: 450px;
+}
+
+.mt-124 {
+    margin-top: 124px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.header-templt {
+    position: absolute;
+    width: 1200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    margin-top: 32px;
+}
+
+.header-templt-500 {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    margin-top: 32px;
+}
+
+#scrolldown {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1005;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Visby CF bold';
+    color: #fff;
+}
+
+.arrsld {
+    position: absolute;
+    z-index: 1000;
+    width: 32px !important;
+    left: 12px;
+    top: 400px;
+    cursor: pointer;
+}
+
+.arrsld2 {
+    position: absolute;
+    z-index: 1000;
+    width: 32px !important;
+    right: 12px;
+    top: 400px;
+    cursor: pointer;
+}
+
+.arrsld3 {
+    position: absolute;
+    z-index: 1000;
+    width: 32px !important;
+    left: 70px;
+    top: 190px;
+    cursor: pointer;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.arrsld4 {
+    position: absolute;
+    z-index: 1000;
+    width: 32px !important;
+    right: 70px;
+    top: 190px;
+    cursor: pointer;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.arrsld5 {
+    position: absolute;
+    z-index: 1000;
+    width: 32px !important;
+    left: 12px;
+    top: 210px;
+    cursor: pointer;
+}
+
+.arrsld6 {
+    position: absolute;
+    z-index: 1000;
+    width: 32px !important;
+    right: 12px;
+    top: 210px;
+    cursor: pointer;
+}
+
+.dwarr {
+    animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+#emptsrc {
+    display: none;
+}
+
+.imgemptsearch {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.col-left {
+    color: var(--dark);
+    left: 10px;
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    display: inline-block;
+}
+
+.col-left-auto {
+    display: inline;
+    color: var(--dark);
+    left: 10px;
+    text-align: left;
+    position: absolute;
+}
+
+
+
+.col-left-600 {
+    display: inline;
+    color: var(--dark);
+    left: 10px;
+    width: 600px;
+    text-align: left;
+    position: absolute;
+}
+
+.col-left-800 {
+    display: inline;
+    color: var(--dark);
+    left: 10px;
+    width: 800px;
+    text-align: left;
+    position: absolute;
+}
+
+.col-right {
+    display: inline;
+    color: var(--gold);
+    right: 10px;
+    position: absolute;
+    font-size: 24px;
+    top: 13px;
+}
+
+.createbtn {
+    border: solid var(--gold) 1px;
+    padding: 10px 28px;
+    border-radius: 50px;
+    font-size: 13px !important;
+    height: 19px;
+    top: 0;
+    cursor: pointer;
+}
+
+.fn-size-30 {
+    font-size: 30px;
+}
+.promos-slider {
+    top: 94px;
+}
+
+.promos-slider2 {
+    top: 94px;
+}
+
+.events-slider {
+    top: 105px;
+}
+
+.brands-list-search {}
+
+.sld_tsm_ {
+    height: 435px;
+    width: 220px;
+    margin: 20px;
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 7%);
+    border-radius: 16px;
+    transition: all 300ms ease;
+    filter: brightness(100%);
+    transition: all .3s;
+    cursor: pointer;
+    /* border: solid 1px #d7d7d7; */
+}
+
+.sld_tsm_secondary {
+    height: 435px;
+    width: 220px;
+    margin: 20px;
+    border-radius: 16px;
+}
+
+.sld_tsm_secondary_event_300 {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.sld_tsm_secondary_event {
+    height: 435px;
+    width: 610px;
+    margin: 20px;
+    border-radius: 16px;
+}
+
+.sld_tsm_secondary_event_right {
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.sld_tsm_secondary_event_detail2 {
+    /* width: 800px; */
+    width: 770px;
+    border-radius: 16px;
+}
+
+.sld_tsm_secondary img {
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 7%);
+    border-radius: 16px;
+}
+
+.sld_tsm_secondary img:hover {
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 30%);
+    border-radius: 16px;
+}
+
+.sld_tsm_promos_detail {
+    width: 505px;
+    margin: 20px;
+    transition: all .3s;
+}
+
+.sld_tsm_promos_detail img {
+    width: 505px;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 28px;
+}
+
+.sld_tsm_promos_detail img:hover {
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 30%);
+}
+
+.sld_tsm_ img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.sld_tsm_.hide {
+    /*    width: 234px;*/
+    padding-top: 70px;
+    box-shadow: none;
+    transition: all .3s;
+    border: none;
+}
+
+.sld_tsm_.hide img {
+    width: 175px;
+    border-radius: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: grayscale(1);
+    transition: all .3s;
+
+}
+
+.sld_tsm_txtpromo {
+    font-family: 'Visby CF bold';
+    font-size: 24px;
+    color: #000;
+    text-align: left;
+    padding-left: 10px;
+    position: absolute;
+    transition: all .3s;
+}
+
+#fstg {
+    position: fixed;
+    bottom: 10px;
+    right: 13px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.sld_tsm_txtevent {
+    font-family: 'Visby CF bold';
+    font-size: 24px;
+    color: #000;
+    text-align: left;
+    padding-left: 10px;
+    transition: all .3s;
+}
+
+.fontsize-36 {
+    font-size: 36px;
+}
+
+.noeventimg {
+    margin-top: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.noeventtext {
+    margin-top: 121px;
+    font-family: 'Visby CF';
+    font-size: 36px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.emptyevent {
+    position: absolute;
+    color: #000;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    height: 600px;
+    margin-top: 45px;
+}
+
+
+#crp {
+    color: #7a7a7a;
+    font-size: 10px;
+    padding-top: 13px;
+    position: fixed;
+    height: 28px;
+    bottom: 0;
+    width: 800px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* background-color: #0845a4; */
+    border-radius: 32px 32px 0px 0px;
+}
+
+.nopromoimg {
+    margin-top: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nopromotext {
+    margin-top: 121px;
+    font-family: 'Visby CF';
+    font-size: 36px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+#bgvv {
+    position: absolute;
+    width: 100%;
+    top: -50%;
+}
+
+.emptypromo {
+    position: absolute;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    height: 600px;
+}
+
+.sld_tsm_txtevent_normal {
+    font-family: 'Visby CF';
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sld_tsm_txtevents {
+    font-family: 'Visby CF bold';
+    font-size: 30px;
+    color: #000;
+    text-align: left;
+    padding-left: 21px;
+}
+
+.sld_tsm_txtpromodate {
+    font-family: 'Visby CF';
+    font-size: 12px;
+    color: #736d03;
+    text-align: left;
+    padding-top: 7px;
+    margin-left: 10px;
+    background-color: #fab300;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -85px;
+    margin-bottom: 5px;
+}
+
+.desc-promo {
+    font-family: 'Visby CF';
+    font-size: 15px;
+    color: #000;
+    padding: 21px;
+    /* padding: 21px 21px 21px 10px; */
+    text-align: left;
+    position: relative;
+    margin-top: -10px;
+}
+
+.pl-10 {
+    padding-left: 10px !important;
+}
+
+.desc-promo_secondary {
+    font-family: 'Visby CF' !important;
+    font-size: 16px !important;
+    color: #000;
+    padding: 12px;
+    text-align: left;
+}
+
+.desc-promo_secondary span {
+    font-family: 'Visby CF' !important;
+    font-size: 16px !important;
+}
+
+.desc-promo_secondary_event {
+    font-family: 'Visby CF';
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    line-height: 20.32px;
+}
+
+.desc-promo2 {
+    font-family: 'Visby CF';
+    font-size: 16px;
+    color: #000;
+    padding: 12px;
+    text-align: left;
+}
+
+.sld_tsm_2 {
+    height: 642px;
+    /*    width: 822px;*/
+    width: 712px;
+    filter: brightness(100%);
+    margin: 20px;
+    box-shadow: 0px 5px 38px rgba(0, 0, 0, 0.07);
+    border-radius: 24px;
+    transition: all 300ms ease;
+}
+
+.sld_tsm_2 img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.sld_tsm_2.hide {
+    box-shadow: none;
+}
+
+.sld_tsm_2.hide img {
+    border-radius: 16px;
+    filter: brightness(80%);
+}
+
+.sld_tsm_txtpromo {
+    font-family: 'Visby CF bold';
+    font-size: 22px;
+    color: #000;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+}
+
+.img-slider-center {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.img-slider-center img {
+    width: 100%;
+}
+
+.footer-seg {
+    width: 400px;
+    /* height: 200px; */
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.footer-h1 {
+    font-size: 24px;
+}
+
+.footer-small {
+    font-size: 16px;
+    font-family: 'Visby CF';
+    line-height: 24px;
+    display: inherit;
+    height: 30px;
+    margin-top: -2px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.footer-sos {
+    list-style-type: none;
+    margin-left: -45px;
+}
+
+.footer-sos li {
+    display: inline-block;
+    width: 70px;
+}
+
+#newsletter {
+    width: 360px;
+    height: 35px;
+    border-radius: 8px;
+    border: solid 0px;
+    font-family: 'Visby CF';
+    padding-left: 12px;
+}
+
+.de-promos {
+    color: #000;
+    padding-top: 100px;
+}
+
+.det-seg-main {
+    width: 545px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.det-seg {
+    width: 320px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.det-seg-event {
+    width: 610px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.det-seg-event-200 {
+    width: 300px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.det-seg-event-300 {
+    width: 400px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.det-seg-event-1000 {
+    width: 800px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.infimsg {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Visby CF';
+    background-color: var(--gold);
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.img100 {
+    width: 100%;
+}
+
+.imgbrandlogo {
+    width: 146px;
+}
+
+.imgradius24 {
+    border-radius: 24px;
+}
+
+.imgradius16 {
+    border-radius: 16px;
+}
+
+.imgradius12 {
+    border-radius: 12px;
+}
+
+.imgshadow {
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 7%);
+}
+
+.imgshadow:hover {
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 30%);
+}
+
+.det-seg-other {
+    width: 300px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.brand-list-det {
+    width: 172px;
+    height: 172px;
+    display: inline-block;
+    vertical-align: text-top;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    margin: 9px;
+}
+
+.brand-list-det:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.1s ease;
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 30%);
+}
+
+.brand-list-det-2 {
+    width: 380px;
+    height: 340px;
+    display: inline-block;
+    vertical-align: text-top;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    border: solid 1px #000;
+    color: #000;
+}
+
+.brand-list-det-2:hover {
+    border: solid 1px #fff;
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 30%);
+}
+
+.brand-list-det-h1 {
+    font-family: 'Trajan-Pro';
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+.det-seg-other-event {
+    width: 400px;
+    display: inline-block;
+    margin-top: 85px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.pt-40 {
+    padding-top: 140px;
+}
+
+.line-hgt-16 {
+    line-height: 1.6;
+}
+
+.event_related_header {
+    font-family: 'Visby CF';
+    font-size: 30px;
+    color: #000;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-30 {
+    margin-bottom: 60px;
+}
+
+.viewall-detail {
+    color: var(--gold);
+    font-size: 24px;
+    font-family: 'Visby CF bold';
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-20 {
+    margin-top: 10px;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.thumb-other-promo {
+    width: 185px;
+    display: inline-block;
+}
+
+.thumb-other-promo-txt {
+    width: 200px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.brands-list {
+    margin-bottom: 143px;
+    margin-top: 143px;
+}
+
+#sendbutton {
+    position: absolute;
+    margin-left: 335px;
+    margin-top: 19px;
+}
+
+.dimmer {
+    width: 172px;
+    height: 172px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -37px;
+    border-radius: 10px;
+    display: none;
+}
+
+#dimmerModal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    top: 0;
+    display: none;
+    opacity: 0;
+    backdrop-filter: blur(4px);
+}
+
+
+#audimg {
+    width: 300px;
+    position: absolute;
+    left: 10px;
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 30%);
+    border-radius: 24px;
+    top: 20px;
+}
+
+.colright-popup1 {
+    display: inline;
+    color: var(--dark);
+    position: absolute;
+    font-size: 24px;
+    top: 13px;
+    right: 30px;
+    width: 40%;
+    text-align: left;
+}
+.colcenter-popup1 {
+    color: var(--dark);
+    position: absolute;
+    font-size: 24px;
+    top: 13px;
+    width: 100%;
+    text-align: center;
+}
+
+.ccbutton {
+    left: 0;
+    right: 0;
+    display: inline-block;
+    border-radius: 30px;
+    border: solid 1px;
+    font-size: 22px;
+    padding: 5px 30px;
+    height: 30px;
+    width: 100px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.ccbutton_active {
+    background-color: var(--gold);
+    color: #fff;
+}
+
+
+.inlinepickup {
+    color: var(--dark);
+    margin-top: 130px;
+    position: absolute;
+    font-family: 'Visby CF';
+    left: 0;
+    right: 0;
+    margin-inline-start: -30px !important;
+}
+
+.inlinepickup li{
+    color: var(--dark);
+    font-size: 15px;
+    display: inline-block;
+    border: solid 1px #ccc;
+    padding: 12px 30px;
+    height: 19px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#articleslist {
+    display: none;
+}
+#genderlist {
+    display: none;
+}
+#agelist {
+    display: none;
+}
+#inlist {
+    display: none;
+}
+#lolist {
+    display: none;
+}
+#prlist {
+    display: none;
+}
+#vdlist {
+    display: none;
+}
+
+
+#calcuses {
+    color: var(--dark);
+    font-size: 60px;
+}
+#cpcalc {
+    color: var(--dark);
+    font-size: 20px;
+}
+#cpcalc2 {
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: 'Visby CF';
+}
+
+#cpcalc3 {
+    font-family: 'Visby CF bold';
+    font-size: 14px;
+    padding: 20px;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #0845a4;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 350px;
+    display: none;
+}
+
+#bckc {
+    background-color: #000;
+    width: 42px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 40px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#step2 {
+    display: none;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.sld_tsm2_ {
+    height: 365px;
+    width: 220px;
+    margin: 20px;
+    /* box-shadow: 0px 5px 38px rgb(0 0 0 / 7%); */
+    border-radius: 16px;
+    /* transition: all 300ms ease; */
+    /* filter: brightness(100%); */
+    /* transition: all .3s; */
+    cursor: pointer;
+    border: solid 1px #d7d7d7;
+    display: inline-block;
+}
+
+.createbtn2 {
+    border: solid var(--dark) 1px;
+    padding: 10px 28px;
+    border-radius: 50px;
+    font-size: 13px !important;
+    height: 19px;
+    top: 0;
+    cursor: pointer;
+    margin: 0px 20px;
+    color: var(--dark);
+}
+
+.sld_tsm3_ {
+    display: inline-block;
+    top: 0;
+    vertical-align: top;
+    padding-top: 150px;
+}
+
+.sld_tsm3_ img {
+    width: 100px;
+}
+
+.sld_tsm2_ img {
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 7%);
+    border-radius: 11px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+#ttlstep2 {
+    text-align: center;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: var(--dark);
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    font-size: 28px;
+
+}
+
+.wholeradius {
+    border-radius: 16px 16px 16px 16px !important;
+}
+
+.sld_tsm_txtpromodate2 {
+    font-family: 'Visby CF Bold';
+    font-size: 12px;
+    color: var(--dark);
+    text-align: left;
+    padding-top: 7px;
+    margin-left: 10px;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    left: 0;
+    right: 0;
+    width: 130px;
+    margin: auto;
+    text-align: center;
+}
+
+.tagl1 {
+    top: -23px;
+}
+.tagl2 {
+    top: 163px;
+}
+
+.inlinepickupactive {
+    background-color: #fab300;
+}
+
+.cccontbutton {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+#modalsearch {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 1001;
+    display: none;
+}
+
+.desctext {
+    font-size: 15px;
+    font-family: Visby CF;
+}
+
+.ttltext {
+    margin-block-start: 3px;
+}
+
+.userinfo {
+    font-size: 16px;
+    border-top: solid 1px;
+}
+
+#myqr {
+    position: absolute;
+    right: 42px;
+    top: 56px;
+    width: 120px;
+}
+
+#nof {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    top: 10px;
+}
+
+
+
+#modalpickmall {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 622px;
+    height: 520px;
+    margin: auto;
+    z-index: 1001;
+    background-color: #fff;
+    border-radius: 30px;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+}
+
+#imgoopx {
+    top: 23px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+#imgoopx iframe {
+    border: none;
+    width: 320px;
+    height: 480px;
+}
+
+#doopx {
+    top: 31px;
+}
+
+#qrimg {
+    width: 120px;
+    margin-top: 10px;
+}
+
+#modalpickmall2 {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 660px;
+    height: 564px;
+    margin: auto;
+    z-index: 1001;
+    background-color: #fff;
+    border-radius: 30px;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+}
+#modalfilter {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 622px;
+    height: 520px;
+    margin: auto;
+    z-index: 1001;
+    background-color: #fff;
+    border-radius: 30px;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+.pcal {
+    display: inline-block;
+    background-color: #DAB253;
+    padding: 2px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 9px;
+    border-radius: 4px;
+    height: 21px;
+}
+
+.pcal span {
+    position: relative;
+    padding-right: 10px;
+    top: -3px;
+}
+
+.pfloor {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.desc-brd-detail {
+    font-family: 'Visby CF';
+    font-size: 16px;
+}
+
+.promo-badge {
+    border: solid 1px #DAB253;
+    display: inline-block;
+    color: #DAB253;
+    font-size: 17px;
+    border-radius: 6px;
+    padding: 4px 8px 5px 8px;
+    margin-top: 7px;
+}
+
+#txtsearch {
+    width: 882px;
+    border: solid #B08E49 2px;
+    font-size: 12px;
+    font-family: 'Visby CF';
+    padding-left: 12px;
+    border-radius: 8px;
+    height: 37px;
+    color: #B08E49;
+}
+
+.bgsearch {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.srcicon {
+    position: absolute;
+    left: 850px;
+    right: 0;
+    margin: auto;
+    top: 12px;
+    cursor: pointer;
+}
+
+.closesearch {
+    position: absolute;
+}
+
+#clspan {
+    position: absolute;
+    right: 63px;
+    top: 29px;
+    cursor: pointer;
+}
+
+.docioc {
+    font-size: 12px;
+    font-family: 'Visby CF Bold';
+    color: var(--dark);
+}
+
+.search-result {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 75%;
+    background-color: #fff;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding: 0 100px 30px 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    z-index: 1;
+}
+
+.searchBoxCont {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.thumb-other-promo-txt-res {
+    width: 400px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.disp-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.disp-inline-only {
+    display: inline-block;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.wdt-300 {
+    width: 300px;
+}
+
+.wdt-100pct {
+    width: 100%;
+}
+
+.closebtn {
+    /* right: 60px; */
+    /* position: fixed; */
+    background-color: var(--gold);
+    color: #fff;
+    font-family: 'Visby CF bold';
+    border-radius: 50%;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    display: inline-block;
+}
+
+.closebtnpm {
+    position: absolute;
+    /* background-color: var(--gold); */
+    color: #fff;
+    font-family: 'Visby CF bold';
+    border-radius: 50%;
+    height: 30px;
+    width: 36px;
+    text-align: center;
+    padding-top: 6px;
+    cursor: pointer;
+    margin-top: -1px;
+    right: -46px;
+    font-size: 18px;
+    background-color: var(--gold);
+}
+
+.malllist {
+    list-style-type: none;
+    font-family: 'Visby CF';
+    font-size: 12px;
+    width: 566px;
+    overflow-x: scroll;
+    margin-top: 66px;
+}
+
+.malllist li {
+    display: inline-block;
+    padding: 10px;
+    color: #B08E49;
+    border-radius: 30px;
+    text-align: center;
+    border: solid #B08E49 1px;
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 10px 29px;
+}
+
+#txtsearchmall {
+    width: 514px;
+    border: solid #000 1px;
+    font-size: 14px;
+    font-family: 'Visby CF';
+    padding-left: 12px;
+    border-radius: 8px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    margin-top: 65px;
+}
+
+.border-act {
+    width: 100%;
+    position: relative;
+    height: 10px;
+    background-color: var(--gold);
+    margin-top: 23px;
+    border-radius: 4px 4px 0 0;
+}
+
+.border-act-none {
+    display: none;
+}
+
+.malllist li.active {
+    display: inline-block;
+    padding: 10px;
+    background-color: #B08E49;
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    border: solid #B08E49 1px;
+    cursor: pointer;
+    padding: 10px 29px;
+}
+
+.malllistresult {
+    list-style-type: none;
+    width: 514px;
+    left: 0;
+    padding-inline-start: 0px;
+}
+
+.lop_mall_ico {
+    position: absolute;
+    top: 139px;
+    right: 56px;
+    cursor: pointer;
+}
+
+.malllistresult li {
+    font-family: 'Visby CF';
+    padding: 5px 0 10px 0;
+    color: #000;
+    border-bottom: solid 1px #D0D0D0;
+    font-size: 14px;
+}
+
+.malllistresult li a:hover {
+    color: #B08E49;
+}
+
+.tnccont {
+    margin-bottom: 143px;
+    margin-top: 143px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 38px rgb(0 0 0 / 7%);
+    border-radius: 12px;
+    padding-bottom: 60px;
+}
+
+.helpcont {
+    margin-top: 143px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.bigbanner {
+    border-radius: 0px 0px 32px 32px;
+}
+
+.column70 {
+    float: left;
+    width: 70%;
+    padding: 10px 10px 10px 0;
+}
+
+.column50 {
+    float: left;
+    width: 48%;
+    padding: 10px 10px 10px 10px;
+}
+
+.icondown {
+    margin-top: 10px;
+    margin-right: 70px;
+}
+
+.column50x {
+    float: left;
+    width: 48%;
+    margin: 10px 0 10px 0;
+    height: 124px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.column50xhelp {
+    float: left;
+    width: 48%;
+    margin: 10px 0 10px 0;
+    height: 124px;
+    text-align: left;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ctop {
+    height: 225px;
+}
+
+.cbot {
+    font-size: 12px;
+}
+
+.statichelp {
+    height: 318px;
+}
+
+.accordion {
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.4s ease;
+    font-family: 'Visby CF';
+    background-color: #fff;
+    margin-bottom: 10px;
+    line-height: 27px;
+}
+
+.acbot {
+    font-family: 'Visby CF';
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+}
+
+.shadowEfct {
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 16px;
+}
+
+.accordion:after {
+    content: '';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accactive:after {
+    content: '\2212';
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel ol {
+    font-family: 'Visby CF';
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+}
+
+.panel ul {
+    font-family: 'Visby CF';
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+}
+
+.faqheader {
+    font-family: 'Visby CF bold';
+    font-size: 36px;
+    color: #000;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.nolisttype {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.disp-inline {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+.mr20 {
+    margin-right: 23px;
+}
+
+.pd2000 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1390px) {
+    .white-container-relatif {
+        width: 1300px;
+        border-radius: 32px 32px 0px 0px;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .sld_tsm_secondary_event {
+        height: 435px;
+        width: 610px;
+        margin: 0;
+        border-radius: 16px;
+    }
+    .sld_tsm_promos_detail {
+        width: 505px;
+        margin: 0 0 50px 0;
+    }
+    .sld_tsm_secondary {
+        height: 435px;
+        width: 298px;
+        margin: 0;
+        border-radius: 16px;
+    }
+    .faqheader {
+        font-family: 'Visby CF bold';
+        font-size: 36px;
+        color: #000;
+        text-align: left;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .accodiv {
+        margin-bottom: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .mr20 {
+        margin-right: 20px;
+    }
+    .pd2000 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .search-result {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 75%;
+        background-color: #fff;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        padding: 0 40px 30px 40px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: none;
+        z-index: 1;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name='ad.size' content='width=300,height=250'>
+    
+
+    <script src="js/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style.css?v=1">
+	
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	
+</head>
+
+
+<body>
+    <div id="border"></div>
+    <div id="container">
+    <img src="images/p2.jpg" id='bgblur' class="filterblur20">
+        <div id='blurbg'></div>
+
+        <div class="tiles-container">
+            <div class="tiles tl1">
+                
+                <img  id='p1a' class="imga">
+                <img  id='p1b' class="imgb">
+
+            </div>
+            <div class="tiles tl2">
+                
+                <img  id='p2a' class="imga">
+                <img  id='p2b' class="imgb">
+
+            </div>
+            <div class="tiles tl3">
+
+                <img  id='p3a' class="imga">
+                <img  id='p3b' class="imgb">
+
+            </div>
+            <div class="tiles tl4">
+                
+                <img  id='p4a' class="imga">
+                <img  id='p4b' class="imgb">
+
+            </div>
+            <div class="tiles tl5">
+                
+                <img  id='p5a' class="imgb">
+                <img  id='p5b' class="imgb">    
+            </div>
+        </div>
+
+        <div id="tittle">The Coffee House</div>
+        <div id="sub">
+           Nongkrong tambah kopi berkualitas tinggi ke The coffee house aja</div>
+        <div id="cta">More Info</div>
+        <img src="images/profile.jpg"  id="pro">
+        <div id="foll">Follow Us</div>
+        <div id="igpro">@unicoffeehouse</div>
+    </div>
+<script>
+
+let tla = 150;
+let tlb = 0;
+var limg = ['images/p1.jpg', 'images/p2.jpg', 'images/p3.jpg', 'images/p4.jpg', 'images/p4.jpg'];
+let postsld = 1;
+let loops = 3;
+
+TweenLite.to(p1b, 0, {y: -150,ease: Expo.easeOut});
+TweenLite.to(p2b, 0, {y: -150,ease: Expo.easeOut});
+TweenLite.to(p3b, 0, {y: -150,ease: Expo.easeOut});
+TweenLite.to(p4b, 0, {y: -150,ease: Expo.easeOut});
+TweenLite.to(p5b, 0, {y: -150,ease: Expo.easeOut});
+
+
+initimages();
+
+function initimages() {
+    
+    p1a.src = limg[0];
+    p1b.src = limg[3];
+    p2a.src = limg[1];
+    p2b.src = limg[0];
+    p3a.src = limg[2];
+    p3b.src = limg[1];
+    p4a.src = limg[3];
+    p4b.src = limg[2];
+    p5a.src = limg[0];
+    p5b.src = limg[4];
+    runslide();
+}
+
+function runslide() {
+    TweenLite.to(p1a, 2, {y: tla,ease: Expo.easeInOut});
+    TweenLite.to(p1b, 2, {y: tlb,ease: Expo.easeInOut});
+
+    TweenLite.to(p2a, 2, {y: tla,ease: Expo.easeInOut});
+    TweenLite.to(p2b, 2, {y: tlb,ease: Expo.easeInOut});
+
+    TweenLite.to(p3a, 2, {y: tla,ease: Expo.easeInOut});
+    TweenLite.to(p3b, 2, {y: tlb,ease: Expo.easeInOut});
+
+    TweenLite.to(p4a, 2, {y: tla,ease: Expo.easeInOut});
+    TweenLite.to(p4b, 2, {y: tlb,ease: Expo.easeInOut});
+
+    p5a.src = limg[0];
+    p5b.src = limg[1];
+    TweenLite.to(p5a, 2, {y: tla,ease: Expo.easeInOut});
+    TweenLite.to(p5b, 2, {y: tlb,ease: Expo.easeInOut, onComplete:updateimage});
+
+    //setTimeout(runslide, 3000);
+    TweenLite.to(foll, 0, {y:0,ease: Expo.easeOut,  delay:3.5, onComplete:autoSlide});
+}
+
+function autoSlide () {
+    //console.log(loops);
+    if (loops >= 0) {
+        runslide()
+    }
+    loops--;
+}
+
+function updateimage() {
+    
+    postsld++;
+
+    if (postsld > 4) {
+        postsld = 1;
+    }
+    //console.log(postsld);
+
+    switch (postsld) {
+        case 1:
+            p2b.src = limg[0];
+            p1b.src = limg[1];
+            p4b.src = limg[2];
+            p3b.src = limg[3];
+            break;
+        case 2:
+            p3a.src = limg[0];
+            p4a.src = limg[1];
+            p1a.src = limg[2];
+            p2a.src = limg[3];
+            break;
+        case 3:
+            p4b.src = limg[0];
+            p1b.src = limg[1];
+            p2b.src = limg[2];
+            p3b.src = limg[3];
+            //p4a.src = limg[3];
+            break;
+        case 4:
+            p1a.src = limg[0];
+            p3a.src = limg[2];
+            p4a.src = limg[3];
+            p2a.src = limg[1];
+            break;   
+            
+    }
+    
+    // p2a.src = limg[postsld + 1];
+    // p3a.src = limg[postsld + 2];
+    // p4a.src = limg[postsld + 3];
+    // p5a.src = limg[postsld + 4];
+
+    if (tla == 150) {
+        TweenLite.to(p1a, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p2a, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p3a, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p4a, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p5a, 0, {y: -150, ease: Expo.easeOut});
+
+        tla = 0;
+        tlb = 150;
+
+    }else{
+        TweenLite.to(p1b, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p2b, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p3b, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p4b, 0, {y: -150, ease: Expo.easeOut});
+        TweenLite.to(p5b, 0, {y: -150, ease: Expo.easeOut});
+
+        tla = 150;
+        tlb = 0;
+    }
+    
+}
+
+</script>
+	
+	<script>
+	
+        // Senggol dikit lompat (Tidak direkomendasikan)
+		// $('#container').on('touchstart',function(){
+      	// 	window.open('https://kompas.com')
+      	// })
+
+        // Standard Event yang harus digunakan sebagai Interaksi User Click
+		// $('#container').on('click',function(){
+      	// 	window.open('https://kompas.com')
+      	// })
+	
+	</script>
+</body>
+
+</html>
